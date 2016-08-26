@@ -9,7 +9,7 @@ class Restaurante
 		puts "A nota do #{@nome} foi #{nota}. #{msg}"
 	end
 
-	restaurante_um = Restaurante.new('la raclete')
+	restaurante_um = Restaurante.new('companhia do churrasco')
 	restaurante_dois = Restaurante.new('xerife')
 
 	restaurante_um.qualifica(10)

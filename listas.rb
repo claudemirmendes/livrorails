@@ -8,10 +8,16 @@ class Franquia
     @restaurantes << restaurante
   end
 
-  def mostra
-    for restaurante in @restaurantes
-      puts restaurante.nome
-    end
+  def relatorio
+  @restaurantes.each do |r|
+    yield r
   end
+end
+
+  def mostra
+  @restaurantes.each do |r|
+    puts r.nome
+  end
+end
 
 end
